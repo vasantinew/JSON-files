@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Retrieving JSON Values</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">   
+</head>
+<body>
+    
+    <div class="pull-down-div hidden-xs"></div>
+    <div class="container ">
+         <div class="row">
+            <div class="col-md-6">
+                <h2>Display the JSON values as an array</h2>
+            </div>
+         </div>
+        <!--Input Values-->
+         <div class="input-group">
+            <input type="text" id="txt_name" class="form-control " value="https://raw.githubusercontent.com/substack/node-browserify/master/package.json" placeholder="URL Please...">
+            <span class="input-group-btn">
+                <button class="btn btn-primary" type="button">SUBMIT</button>
+            </span>
+        </div>
+        <!--Displaying  Json Values-->
+        <div id="jvalues">
+            <table class="table table-striped table-hover">
+            </table>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
